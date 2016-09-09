@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![](https://raw.githubusercontent.com/noppefoxwolf/InverseTableView/master/sample.gif)
+
 ## Requirements
 
 ## Installation
@@ -19,6 +21,21 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "InverseTableView"
 ```
+
+##Usage
+
+```
+@IBOutlet weak var inverseTableView: InverseTableView!
+private var dataSourceInverser: UITableViewDataSourceInverser? = nil
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    dataSourceInverser = UITableViewDataSourceInverser(dataSource: self)
+    inverseTableView.delegate = self
+    inverseTableView.dataSource = dataSourceInverser
+}
+```
+  
 
 ## Author
 
