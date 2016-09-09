@@ -1,0 +1,6 @@
+framework module Pods_InverseTableView_Example {
+  umbrella header "Pods-InverseTableView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

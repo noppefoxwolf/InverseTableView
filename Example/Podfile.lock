@@ -1,0 +1,16 @@
+PODS:
+  - InverseTableView (0.1.0)
+
+DEPENDENCIES:
+  - InverseTableView (from `../`)
+
+EXTERNAL SOURCES:
+  InverseTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InverseTableView: 26fa9697f3b62ce42115b949a876b02277473741
+
+PODFILE CHECKSUM: e28f2eac5bc0607af3aed14676b9dae2d75e5c2f
+
+COCOAPODS: 1.1.0.beta.1

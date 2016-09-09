@@ -1,0 +1,22 @@
+{
+  "name": "InverseTableView",
+  "version": "0.1.0",
+  "summary": "A short description of InverseTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/InverseTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tomoya Hirano": "tomoya.hirano@dena.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/InverseTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "InverseTableView/Classes/**/*"
+}

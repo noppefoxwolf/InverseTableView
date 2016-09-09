@@ -1,0 +1,6 @@
+framework module InverseTableView {
+  umbrella header "InverseTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
