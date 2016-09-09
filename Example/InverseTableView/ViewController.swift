@@ -11,8 +11,8 @@ import InverseTableView
 
 class ViewController: UIViewController {
   @IBOutlet weak var inverseTableView: InverseTableView!
-  private var strings = [String]()
   private var dataSourceInverser: UITableViewDataSourceInverser? = nil
+  private var strings = [String]()
   
   override func viewDidLoad() {
     super.viewDidLoad()

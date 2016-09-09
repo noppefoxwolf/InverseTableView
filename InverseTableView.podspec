@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InverseTableView'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'InverseTableView is subclass of UITableView, able to insert like chat.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+InverseTableView is subclass of UITableView, able to insert like chat. included datasource converter.
                        DESC
 
   s.homepage         = 'https://github.com/noppefoxwolf/InverseTableView'
