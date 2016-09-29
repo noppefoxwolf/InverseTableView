@@ -8,25 +8,25 @@
 
 import UIKit
 
-public class InverseTableView: UITableView {
-  public override func awakeFromNib() {
+open class InverseTableView: UITableView {
+  open override func awakeFromNib() {
     super.awakeFromNib()
-    transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+    transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
     tableFooterView = UIView()
   }
   
-  public override func insertRowsAtIndexPaths(indexPaths: [NSIndexPath], withRowAnimation animation: UITableViewRowAnimation) {
-    super.insertRowsAtIndexPaths(indexPaths, withRowAnimation: animation.inverse())
+  open override func insertRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation) {
+    super.insertRows(at: indexPaths, with: animation.inverse())
   }
 }
 
 private extension UITableViewRowAnimation {
   func inverse() -> UITableViewRowAnimation {
     switch self {
-    case .Bottom:    return .Top
-    case .Left:      return .Right
-    case .Right:     return .Left
-    case .Top:       return .Bottom
+    case .bottom:    return .top
+    case .left:      return .right
+    case .right:     return .left
+    case .top:       return .bottom
     default: return self
     }
   }

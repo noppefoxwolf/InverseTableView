@@ -9,10 +9,10 @@
 import UIKit
 import InverseTableView
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
   @IBOutlet weak var inverseTableView: InverseTableView!
   private var dataSourceInverser: UITableViewDataSourceInverser? = nil
-  private var strings = [String]()
+  fileprivate var items = [String]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,24 +25,23 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
   
-  @IBAction func insertAction(sender: AnyObject) {
-    let index = NSIndexPath(forRow: 0, inSection: 0)
-    strings.insert("\(strings.count)", atIndex: 0)
-    inverseTableView.insertRowsAtIndexPaths([index], withRowAnimation: UITableViewRowAnimation.Right)
+  @IBAction func insertAction(_ sender: AnyObject) {
+    let index = IndexPath(row: 0, section: 0)
+    items.insert("\(items.count)", at: 0)
+    inverseTableView.insertRows(at: [index], with: UITableViewRowAnimation.right)
   }
+  
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
-  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 1
-  }
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return strings.count
-  }
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
-    cell.textLabel?.text = strings[indexPath.row]
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+    cell.textLabel?.text = items[indexPath.row]
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return items.count
   }
 }
 
