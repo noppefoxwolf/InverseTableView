@@ -9,7 +9,7 @@
 import UIKit
 
 open class UITableViewDataSourceInverser: NSObject {
-  fileprivate var dataSource: UITableViewDataSource
+  weak fileprivate var dataSource: UITableViewDataSource!
   
   public init (dataSource: UITableViewDataSource) {
     self.dataSource = dataSource
