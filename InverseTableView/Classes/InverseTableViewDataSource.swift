@@ -20,7 +20,9 @@ extension UITableViewDataSourceInverser: UITableViewDataSource {
   @available(iOS 2.0, *)
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = dataSource.tableView(tableView, cellForRowAt: indexPath)
+    UIView.setAnimationsEnabled(false)
     cell.transform = CGAffineTransform(rotationAngle: -CGFloat(M_PI))
+    UIView.setAnimationsEnabled(true)
     return cell
   }
   
