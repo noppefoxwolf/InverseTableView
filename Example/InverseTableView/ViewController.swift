@@ -28,7 +28,7 @@ final class ViewController: UIViewController {
   @IBAction func insertAction(_ sender: AnyObject) {
     let index = IndexPath(row: 0, section: 0)
     items.insert("\(items.count)", at: 0)
-    inverseTableView.insertRows(at: [index], with: UITableViewRowAnimation.right)
+    inverseTableView.insertRows(at: [index], with: .right)
   }
   
 }

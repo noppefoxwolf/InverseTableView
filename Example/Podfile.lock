@@ -1,5 +1,5 @@
 PODS:
-  - InverseTableView (0.3.0)
+  - InverseTableView (0.6.0)
 
 DEPENDENCIES:
   - InverseTableView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  InverseTableView: 6927f8611f7cf1ba8e5026e808293cf475111191
+  InverseTableView: 9954c0cee56c657d95a4f89a5ffc30e650852407
 
-PODFILE CHECKSUM: 3518de7e2b8f95fa4bdc824bbee87ba3c7921728
+PODFILE CHECKSUM: 5c1e8141ef4a692f76e1d8a914735d2053d99975
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.0.beta.1

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InverseTableView'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'InverseTableView is subclass of UITableView, able to insert like chat.'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ InverseTableView is subclass of UITableView, able to insert like chat. included 
   # s.social_media_url = 'https://twitter.com/noppefoxwolf'
 
   s.ios.deployment_target = '8.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.source_files = 'InverseTableView/Classes/**/*'
 

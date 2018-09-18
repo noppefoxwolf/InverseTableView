@@ -21,7 +21,7 @@ extension UITableViewDataSourceInverser: UITableViewDataSource {
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = dataSource.tableView(tableView, cellForRowAt: indexPath)
     UIView.setAnimationsEnabled(false)
-    cell.transform = CGAffineTransform(rotationAngle: -CGFloat(M_PI))
+    cell.transform = CGAffineTransform(rotationAngle: -.pi)
     UIView.setAnimationsEnabled(true)
     return cell
   }
@@ -69,7 +69,7 @@ extension UITableViewDataSourceInverser: UITableViewDataSource {
   }
   
   @available(iOS 2.0, *)
-  public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+  public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     dataSource.tableView?(tableView, commit: editingStyle, forRowAt: indexPath)
   }
   
