@@ -14,7 +14,7 @@ Open `Example.swiftpm` on your Xcode or iPad Playground.
 Add package your Package.swift
 
 ```swift
-.package(url: "https://github.com/noppefoxwolf/InverseTableView", from: "0.5")
+.package(url: "https://github.com/noppefoxwolf/InverseTableView", from: "0.9.0")
 ```
 
 ##Usage
