@@ -1,9 +1,0 @@
-use_frameworks!
-
-target 'InverseTableView_Example' do
-  pod 'InverseTableView', :path => '../'
-
-  target 'InverseTableView_Tests' do
-    inherit! :search_paths
-  end
-end

@@ -2,26 +2,26 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-![](https://raw.githubusercontent.com/noppefoxwolf/InverseTableView/master/sample.gif)
+Open `Example.swiftpm` on your Xcode or iPad Playground.
 
 ## Requirements
 
+- iOS13+
+- Swift5.6+
+
 ## Installation
 
-InverseTableView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Add package your Package.swift
 
-```ruby
-pod "InverseTableView"
+```swift
+.package(url: "https://github.com/noppefoxwolf/InverseTableView", from: "0.5")
 ```
 
 ##Usage
 
-```
-@IBOutlet weak var inverseTableView: InverseTableView!
-private var dataSourceInverser: UITableViewDataSourceInverser? = nil
+```swift
+let inverseTableView: InverseTableView = { ... }()
+var dataSourceInverser: UITableViewDataSourceInverser? = nil
 
 override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,11 +30,11 @@ override func viewDidLoad() {
     inverseTableView.dataSource = dataSourceInverser
 }
 ```
-  
+
 
 ## Author
 
-Tomoya Hirano, cromteria@gmail.com
+noppefoxwolf, noppelabs@gmail.com
 
 ## License
 
